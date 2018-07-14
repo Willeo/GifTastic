@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Will Giftastic</title>
+
+    <!-- Load external CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./assets/scripts/apps.js"></script>
+
 </head>
+
 <body>
 
+    <!-- Main Container -->
     <div class="container">
-        <div class="cars-btn" data-name="lamborghinis">
-            <button class="cars">cars</button>
+        <!-- Row containing the car buttons -->
+        <div class="row" id="buttonPanel">
         </div>
-    <!-- Need Buttons at the top in their own <div>
-        
-i.e. - <button class=" whatever you want to use as btn class" data-name="Audi" style="however big you want the buttons set a margin preferably">Audi</button>
+        <!-- End row with car buttons -->
 
--->
+        <!-- Row containing the gifs and the user form -->
+        <div class="row">
+            <!-- Right panel containing the user form -->
+            <div class="formPanel" style="float:right;width:25%;">
+                <!-- Don't have access to the CSS file from here, was just testing. -->
+                <form id="car-form">
+                    <label for="car-input" class="inputLabel">Add a car manufacturer</label>
+                    <input type="text" id="car-input">
+                    <br>
 
+                    <!-- Button triggers a new car to be added -->
+                    <input id="add-car" type="submit" value="Submit">
+                </form>
+            </div>
+            <!-- End right panel containing the user form -->
+            <!-- Left panel containing the gifs -->
+            <div id="gifPanel" style="float:left;">
+            </div>
+            <!-- End left panel containing the gifs  -->
 
+        </div>
+        <!-- End row with gifs and user form -->
 
-</div>
+    </div>
+    <!-- End Main Container -->
+    <!-- Load jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./assets/scripts/apps.js"></script>
 
-<!-- <script whatever jquery library you're using> End of body or head w/e they recommended for you isn't a big deal really -->
 </body>
+
 </html>
